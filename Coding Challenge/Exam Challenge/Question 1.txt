@@ -1,0 +1,16 @@
+Question 1 
+
+Convert the provided Java files into CPP program. You need to write header and its implementation 
+for the Java classes. An abstract Java class can written in an header file. Provide a makefile to compile the program
+
+Header files - 50 points
+Implementation files - 60 points
+Main - 25
+makefile - 15 points
+
+
+Note: Pay close attention to the following 
+1. Abstraction, Dynamic Variables, Polymorphsim, and Inheritance
+2. Java Package definition. 
+3. Make sure you use pointers and dynamic variables as needed.
+4. The provided folder "birds" is a Java package.  

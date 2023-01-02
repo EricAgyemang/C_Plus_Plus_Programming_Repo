@@ -1,0 +1,9 @@
+CC=g++
+CFLAGS=-std=c++11
+
+all:CopyConstructor.o 
+	$(CC) $(CFLAGS) CopyConstructor.o -o out
+CopyConstructor.o:CopyConstructor.cpp
+	$(CC) $(CFLAGS) -c CopyConstructor.cpp
+clean:
+	rm *.o out

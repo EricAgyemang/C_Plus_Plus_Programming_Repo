@@ -1,0 +1,9 @@
+CC=g++
+CFLAGS=-std=c++11
+
+all:Person
+	$(CC) $(CFLAGS) Person.o -o out
+Person:
+	$(CC) $(CFLAGS) -c Person.cpp
+clean:
+	rm *.o out

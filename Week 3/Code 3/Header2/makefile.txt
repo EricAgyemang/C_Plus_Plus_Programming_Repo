@@ -1,0 +1,20 @@
+CC=g++
+CFLAGS=-std=c++11 -c
+
+all:AddSourceGoal MultiplySourceGoal SubtractSourceGoal MainGoal
+	g++ -std=c++11 AddSource.o MultiplySource.o SubtractSource.o main.o -o out
+
+AddSourceGoal:AddSource.cpp
+	$(CC) $(CFLAGS) -c AddSource.cpp
+
+MultiplySourceGoal:MultiplySource.cpp
+	$(CC) $(CFLAGS) -c MultiplySource.cpp
+
+SubtractSourceGoal:SubtractSource.cpp
+	$(CC) $(CFLAGS) -c SubtractSource.cpp
+
+MainGoal:main.cpp
+	$(CC) $(CFLAGS) -c main.cpp
+
+clean:
+	rm *.o out
